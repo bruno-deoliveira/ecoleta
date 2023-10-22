@@ -11,6 +11,10 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/modal.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  
 </head>
 <body>
 
@@ -19,7 +23,7 @@
 
       <header>
         <img src="./assets/logo.svg" alt="">
-        <a href="http://google.com.br">
+        <a href="create-point.html">
           <span></span>
           Cadastre um ponto de coleta
         </a>
@@ -35,6 +39,27 @@
     
     </div>
   </div>
-  
+
+  <div id="modal" class="hide">
+    <div class="content">
+      <div class="header">
+        <h1>Pontos de Coleta</h1>
+        <a href="#">Fechar</a>
+      </div>
+
+      <div>
+        <form action="">
+          <label for="search">Cidade</label>
+          <div class="cearch field">              
+            <input type="text" name="search" placeholder="Pesquise por Cidade">
+            <button>
+              <img src="./assets/search.svg" alt="">
+            </button>
+          </div>
+        </form>  
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>
